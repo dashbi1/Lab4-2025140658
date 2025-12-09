@@ -5,6 +5,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 
+
+
+
+
 /*
  * 测试用例设计总体原则
  * 1. 等价类划分：分为有效输入（包含正常数字组合）和无效输入（全为 0 的特殊情况）。
@@ -22,6 +26,12 @@ class SolutionTest {
      * 测试用例：
      * nums = [3, 30, 34, 5, 9]
      */
+
+    
+    //new zhushi in the branch dev test 
+
+
+
     @Test
     void testTypicalCase() {
         int[] nums = {3, 30, 34, 5, 9};
