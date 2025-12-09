@@ -24,14 +24,9 @@ class Solution {
         }
 
         Arrays.sort(numsArr, (x, y) -> {
-            long sx = 10, sy = 10;
-            while (sx <= x) {
-                sx *= 10;
-            }
-            while (sy <= y) {
-                sy *= 10;
-            }
-            return (int) ((sx * y + x) - (sy * x + y));
+            String sx = x.toString() + y.toString();
+            String sy = y.toString() + x.toString();
+            return sy.compareTo(sx);
         });
 
         if (numsArr[0] == 0) {
